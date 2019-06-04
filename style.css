@@ -1,0 +1,78 @@
+/* The actual size of an element is not affected by padding and border*/
+*{
+	box-sizing: border-box;
+	padding: 0px;margin: 0px;
+}
+body{
+	background: #EBEBEB;
+}
+	
+#wrapper{
+	display: flex;
+}
+
+#mainbody-calculator{
+	background: #444444;
+	width: 300px;height: 350px;
+	padding: 15px;
+	display: inline-block;
+	border-radius: 20px;
+	margin: auto;
+}
+
+#mainbody-calculator #screen{
+	display: inline-block;
+	background: #5F5F5F; color: #7E7E7E;
+	text-align: right;
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+	font-family: 'Oswald', sans-serif;
+	padding: 5px;
+}
+#mainbody-calculator #screen span{
+	display: inline-block;
+}
+
+#mainbody-calculator #keys-container{
+	display: grid;
+	height: calc(100% - 34px);
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-gap: 1px;
+	padding: 2px 0px;
+}
+
+/*Highlight disabled*/
+#mainbody-calculator .key button{
+		-webkit-touch-callout: none; /* iOS Safari */
+		-webkit-user-select: none; /* Safari */
+		-khtml-user-select: none; /* Konqueror HTML */
+		-moz-user-select: none; /* Firefox */
+		-ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none; /* Non-prefixed version, currently
+		supported by Chrome and Opera */
+}
+
+#mainbody-calculator .key button{
+	/*border-radius: 15px;*/
+	width: 100%; height: 100%;
+	outline: none; border: none;
+	color: white; background: #838383;
+}
+#mainbody-calculator .key button:active{
+	/*background: rgba(255,255,255,0.5);*/
+	opacity: .7;
+}
+#mainbody-calculator .key.zero{
+	grid-column: 1 / 3;
+}
+#mainbody-calculator .key:nth-child(-n+3) button{
+	background: #555555;
+}
+#mainbody-calculator .key:nth-child(4n) button, 
+#mainbody-calculator .key:nth-child(19) button{
+	background: #FF8300;
+}
+
+
+
