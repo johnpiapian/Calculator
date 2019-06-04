@@ -1,4 +1,4 @@
-var operant = ['AC','C','%','/','*','-','+','='];
+var operant = ['AC','C','%','/','*','-','+','=','.'];
 var temp = '';
 
 $('#keys-container .key button').on('click', function(){

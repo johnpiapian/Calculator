@@ -31,6 +31,7 @@ body{
 }
 #mainbody-calculator #screen span{
 	display: inline-block;
+	color: rgba(255,255,255,0.8);
 }
 
 #mainbody-calculator #keys-container{
@@ -57,7 +58,8 @@ body{
 	/*border-radius: 15px;*/
 	width: 100%; height: 100%;
 	outline: none; border: none;
-	color: white; background: #838383;
+	color: #E0E0E0; background: #838383;
+	font-size: 15px;
 }
 #mainbody-calculator .key button:active{
 	/*background: rgba(255,255,255,0.5);*/
@@ -73,6 +75,5 @@ body{
 #mainbody-calculator .key:nth-child(19) button{
 	background: #FF8300;
 }
-
 
 
